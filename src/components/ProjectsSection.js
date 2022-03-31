@@ -18,7 +18,7 @@ function ProjectsSection({ offsetY }) {
         {projects.map(project =>
             <motion.div
              className="project-container"
-             style={{backgroundColor: project.colors.primary}}
+             style={{ backgroundColor: project.colors.primary }}
              transition={{ duration: 1 }}
              initial={{ translateY: 100, opacity: 0 }}
              whileInView={{ translateY: 0, opacity: 1 }}
@@ -31,7 +31,7 @@ function ProjectsSection({ offsetY }) {
             >
                 <h1>{project.name}</h1>
                 <p>{project.title}</p>
-                <p className="font-smaller">{project.subtitle}</p>
+                <p className="font-smaller" dangerouslySetInnerHTML={{ __html: project.subtitle }}></p>
                 <div className="project-technologies-container">
                     {project.technologies.map(technology =>
                         <span style={{backgroundColor: project.colors.lighter}}>{technology}</span>
