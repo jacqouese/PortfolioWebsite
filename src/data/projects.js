@@ -6,7 +6,7 @@ const projects = [
     title: 'Sales managment website',
     subtitle:
       'Website for managing an online store’s sales. Made to work nicely with Allegro but fee rates are customizable. Keep track of your stock and log sales. Get estimated profits and detailed statistics. <ul> <li>React front-end with Laravel back-end</li> <li>PDF statements with js-pdf</li> </ul>',
-    technologies: ['React', 'Laravel', 'SQL'],
+    technologies: ['React', 'Laravel', 'SQL', 'jsPDF'],
     image: '/imgs/megazeen.png',
     colors: {
       primary: '#00252D',
@@ -37,7 +37,7 @@ const projects = [
     name: 'YouTube Screen Time',
     title: 'Chrome extension for tracking screen time',
     subtitle:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, sed aspernatur? Exercitationem illum numquam sapiente, molestias dolores quidem dicta eum harum sit voluptates a provident natus corporis vitae ipsam eaque.',
+      'Track your time spend on YouTube. See exactly how much time you spend on watching certain categories. Set limits on category basis. <ul> <li>Built in vanilla JavaScript</li> <li>IndexedDB for storing data</li> <li>Ability to restrict time for a specific category</li> </ul>',
     technologies: ['Browser', 'VanilaJS', 'IndexedDB'],
     image: '/imgs/youtube.png',
     colors: {
@@ -46,6 +46,38 @@ const projects = [
       darker: '#001C25',
     },
     url: 'https://github.com/jacqouese/YouTubeScreenTime',
+  },
+  {
+    id: 4,
+    tags: ['PL'],
+    name: 'TablerPlus',
+    title: 'Work schedule generator',
+    subtitle:
+      'Electron applicaton for generating work schedules in a three-shift format <ul> <li>GUI made in Electron with React</li> <li>Intuitive PDF schedule generation</li> <li>Ability to adjust colors and styles</li> </ul>',
+    technologies: ['Electron', 'React', 'jsPDF'],
+    image: '/imgs/tablerplus.png',
+    colors: {
+      primary: '#0C1D1F',
+      lighter: '#132F32',
+      darker: '#091213',
+    },
+    url: 'https://github.com/jacqouese/TablerPlus',
+  },
+  {
+    id: 5,
+    tags: ['PL'],
+    name: 'KołobrzegHotele',
+    title: 'Accomodation search website',
+    subtitle:
+      'Accomodation search for tourists in Kolobrzeg. Find your perfect stay by selecting the importance of certain places to you. Website build in a team of two with Laravel for a competition. <ul> <li>3 languages handled with Laravel Localization</li> <li>Data sourced from city’s open API</li> <li>Bing maps integration</li> </ul>',
+    technologies: ['Laravel', 'VanillaJS', 'External API', 'Bing Maps'],
+    image: '/imgs/hotels.png',
+    colors: {
+      primary: '#132E40',
+      lighter: '#1C425B',
+      darker: '#081620',
+    },
+    url: 'https://github.com/jacqouese/project-k',
   },
 ];
 
