@@ -1,16 +1,14 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 function BelowTopSection() {
+  const { t, i18n } = useTranslation('translations');
+
   return (
     <div className="below-top-section">
       <div className="below-top-inner">
-        <h1>A little bit about me</h1>
-        <p>
-          My name is Jakub. I&rsquo;m a self-taught full-stack developer. My
-          go-to technologies are React and Laravel. I&rsquo;m keen on designing
-          and visuals. Aside from computer science I&rsquo;m aslo passionate
-          about foreign langauges.
-        </p>
+        <h1>{t('belowTop.1')}</h1>
+        <p>{t('belowTop.2')}</p>
       </div>
     </div>
   );

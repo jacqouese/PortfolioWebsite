@@ -111,8 +111,9 @@ header {
   justify-content: center;
   min-height: 80vh;
   width: 100%;
-  background-color: $primary;
   gap: 7rem;
+  padding-top: 4rem;
+  background-color: $primary;
   overflow: hidden;
   button {
     margin-right: 0.8rem;
