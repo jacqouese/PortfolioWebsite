@@ -6,6 +6,7 @@ import ProjectsSection from './components/ProjectsSection';
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Footer from './components/Footer';
 
 function App() {
   const [offsetY, setOffsetY] = useState(0);
@@ -30,6 +31,7 @@ function App() {
         <TechnologiesSection offsetY={offsetY} />
         <ProjectsSection offsetY={offsetY} />
       </motion.div>
+      <Footer />
     </div>
   );
 }

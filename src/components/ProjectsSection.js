@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
+import { SvgBlob } from 'react-svg-blob';
 
 import projects from '../data/projects';
-import { SvgBlob } from 'react-svg-blob';
 
 function ProjectsSection({ offsetY }) {
   return (

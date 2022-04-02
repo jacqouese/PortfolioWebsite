@@ -111,6 +111,21 @@ button.secondary {
   background-color: $priamry-ligher;
 }
 
+.below-top-inner {
+  max-width: 780px;
+  h1:before{
+    content: '';
+    padding: 0 0.15em;
+    height: 0.2rem;
+    margin-right: 0.4rem;
+    background-color: $primary-accent;
+    border-radius: 1rem;
+  }
+  h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .lower-sections {
   display: flex;
   flex-direction: column;
@@ -250,4 +265,53 @@ button.skill-button:hover {
   padding: 0.25rem 0.7rem;
   margin: 0.7rem 0 1.5rem 0;
   border-radius: 0.2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+  font-size: 90%;
+  background-color: $primary;
+}
+
+.footer-links {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 7rem;
+  padding: 0 5rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 2rem;
+  }
+  a {
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+  }
+  a:visited {
+    color: rgb(200, 200, 200);
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-bottom {
+  width: 1200px;
+  padding-top: 4rem;
+  p, h3 {
+    color: #484c53;
+  }
+  hr {
+    border: 1px solid $priamry-ligher;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
 }
