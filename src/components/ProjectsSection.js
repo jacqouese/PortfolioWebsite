@@ -40,7 +40,7 @@ function ProjectsSection({ offsetY }) {
                 </span>
               ))}
             </div>
-            <div>
+            <div className="project-container-buttons">
               <a
                 href="https://www.github.com"
                 className="project-button"

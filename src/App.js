@@ -7,6 +7,7 @@ import ProjectsSection from './components/ProjectsSection';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   const [offsetY, setOffsetY] = useState(0);
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <TopSection offsetY={offsetY} />
       <BelowTopSection />
       <motion.div
