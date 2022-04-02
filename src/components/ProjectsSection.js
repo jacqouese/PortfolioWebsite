@@ -21,8 +21,13 @@ function ProjectsSection({ offsetY }) {
           className="project-container"
           style={{ backgroundColor: project.colors.primary }}
           transition={{ duration: 1 }}
-          initial={{ translateY: 100, opacity: 0 }}
-          whileInView={{ translateY: 0, opacity: 1 }}
+          initial={{ translateY: 100, opacity: 0, perspective: 3000 }}
+          whileInView={{ translateY: 0, opacity: 1, perspective: 3000 }}
+          whileHover={{
+            perspective: 1500,
+            rotateY: '7deg',
+            rotateX: '-7deg',
+          }}
         >
           <motion.div
             className="project-container-text"

@@ -73,11 +73,16 @@ button {
   color: white;
   font-weight: 700;
   cursor: pointer;
+  transition: ease-in 200ms;
 }
 
 button.secondary {
   background-color: transparent;
   color: $primary-accent;
+}
+
+button:hover {
+  
 }
 
 header {
@@ -249,6 +254,7 @@ button.skill-button:hover {
   margin-bottom: 5rem;
   border-radius: 1rem;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 25px 50px
 }
 
 .project-container-text {
