@@ -128,7 +128,7 @@ header {
   position: absolute;
 }
 
-.top-section-image-container img {
+.top-section-image-container svg {
   max-width: 600px;
 }
 
@@ -356,4 +356,5 @@ footer {
   }
 }
 
+@import './animations.scss';
 @import './responsive.scss';

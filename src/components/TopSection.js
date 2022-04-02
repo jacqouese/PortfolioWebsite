@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
-import mainImg from '../assets/mainImg.svg';
+import { ReactComponent as MainSvg } from '../assets/mainImg.svg';
 import { useTranslation } from 'react-i18next';
 
 function TopSection({ offsetY }) {
@@ -34,7 +34,7 @@ function TopSection({ offsetY }) {
         </motion.div>
       </div>
       <div className="top-section-image-container" style={{ transform: `translateY(${offsetY * 0.5}px)` }}>
-        <img src={mainImg} alt="" />
+       <MainSvg />
       </div>
     </div>
   );

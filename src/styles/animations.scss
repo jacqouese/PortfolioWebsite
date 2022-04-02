@@ -1,0 +1,196 @@
+.svg-plant {
+    animation: movePlant 7s infinite;
+    transform-origin: bottom center;
+    transform-box: fill-box;
+}
+  
+.svg-plant-stem {
+    animation: movePlant 7s infinite;
+    transform-origin: bottom center;
+    transform-box: fill-box;
+}
+
+.svg-react-logo {
+    animation: spin 10s linear infinite;
+    transform-origin: center center;
+    transform-box: fill-box;
+}
+
+.svg-blob {
+    animation: moveBg 10s;
+    transform-origin: center center;
+    transform-box: fill-box;
+    transform: scale(95%) rotate(10deg);
+}
+
+.svg-window {
+    animation: showWindow 3s linear;
+    transform-origin: bottom center;
+    transform-box: fill-box;
+}
+
+.svg-line {
+    transform: scaleX(0);
+    transform-origin: center left;
+    transform-box: fill-box;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#line1 {
+    animation: writeLine 1s steps(8, end);
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#line2 {
+    animation: writeLine 2s steps(8, end);
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#line3 {
+    animation: writeLine 2s steps(8, end);
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+#line4 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+#line5 {
+    animation: writeLine 1s steps(6, end);
+    animation-delay: 10s;
+    animation-fill-mode: forwards;
+}
+
+#line6 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+
+#line7 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 22s;
+    animation-fill-mode: forwards;
+}
+
+#line8 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 24s;
+    animation-fill-mode: forwards;
+}
+
+#line9 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 26s;
+    animation-fill-mode: forwards;
+}
+
+#line10 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 28s;
+    animation-fill-mode: forwards;
+}
+
+#line11 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 30s;
+    animation-fill-mode: forwards;
+}
+
+#line12 {
+    animation: writeLine 2s steps(6, end);
+    animation-delay: 32s;
+    animation-fill-mode: forwards;
+}
+
+#browser {
+    animation: showBrowser 7s linear;
+    animation-delay: 12s;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+
+
+@keyframes movePlant {
+    20% {
+      transform: rotate(-10deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
+@keyframes moveBg {
+    0% {
+      transform: scale(90%) rotate(10deg);
+    }
+    50% {
+      transform: scale(100%) rotate(0deg);
+    }
+    100% {
+        transform: scale(95%) rotate(10deg);
+    }
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } to { 
+        transform: rotate(360deg); 
+    }
+}
+
+@keyframes showWindow {
+    0% { 
+        transform: scale(0%); 
+    } 
+    80% { 
+        transform: scale(0%); 
+    }
+    100% { 
+        transform: scale(100%); 
+    }
+}
+
+@keyframes showBrowser {
+    0% { 
+        transform: scale(0%); 
+    } 
+    5% { 
+        transform: scale(100%); 
+    } 
+    50% { 
+        transform: scale(100%); 
+    }
+    95% { 
+        transform: scale(100%); 
+    }
+    100% { 
+        transform: scale(0%); 
+    }
+}
+
+@keyframes writeLine {
+    0% { 
+        transform: scaleX(0);
+    } 
+    100% { 
+        transform: scaleX(1);
+    }
+}
