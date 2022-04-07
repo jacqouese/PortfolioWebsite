@@ -13,9 +13,19 @@ const resources = {
   },
 };
 
+const urlParams = new URLSearchParams(window.location.search);
+const langParam = urlParams.get('lng');
+
+if (langParam !== 'en' && langParam !== 'pl') {
+  urlParams.set('lng', 'en');
+  const url = window.location.href.split('?')[0];
+  window.location.href = url + '?' + urlParams.toString();
+}
+
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'pl',
+  fallbackLng: 'en',
+  lng: langParam,
   keySeperator: false,
   interpolation: {
     escapeValue: false,

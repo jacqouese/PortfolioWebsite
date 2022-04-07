@@ -117,6 +117,31 @@
     transform-box: fill-box;
 }
 
+#arrow-path-1, #arrow-path-2, #arrow-path-3, #arrow-path-head {
+    animation: writeLine 100ms linear;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+}
+
+#arrow-path-1 {
+    animation-delay: 2000ms;
+}
+
+#arrow-path-2 {
+    animation-delay: 2300ms;
+}
+
+#arrow-path-3 {
+    animation-delay: 2600ms;
+}
+
+#arrow-path-head {
+    animation-delay: 2900ms;
+    transform-origin: bottom bottom;
+}
+
 
 @keyframes movePlant {
     20% {

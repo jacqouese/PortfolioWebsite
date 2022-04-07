@@ -95,6 +95,12 @@ header {
   z-index: 10;
 }
 
+header, footer {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -110,7 +116,47 @@ header {
   gap: 4rem;
 }
 
+.header-menu {
+  position: relative;
+  z-index: 1;
+}
+
+img.header-flag {
+  max-width: 24px;
+  max-height: 15px;
+  border-radius: 0.1rem;
+}
+
+.header-menu .header-menu-dropdown {
+  position: absolute;
+  display: none;
+  top: -0.8rem;
+  left: -0.8rem;
+  flex-direction: column;
+  background-color: $priamry-ligher;
+  border-radius: 0.5rem;
+  
+}
+
+.header-menu .header-menu-dropdown div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.header-menu .header-menu-dropdown div:hover {
+  background-color: $priamry-darker;
+}
+
+.header-menu:hover .header-menu-dropdown {
+  display: flex;
+}
+
 .top-section {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -340,9 +386,6 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
     padding-left: 2rem;
-  }
-  a:hover {
-    text-decoration: underline;
   }
 }
 
