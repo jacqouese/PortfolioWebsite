@@ -25,8 +25,8 @@ function ProjectsSection({ offsetY }) {
           whileInView={{ translateY: 0, opacity: 1, perspective: 3000 }}
           whileHover={{
             perspective: 1500,
-            rotateY: '7deg',
-            rotateX: '-7deg',
+            rotateY: '4deg',
+            rotateX: '-4deg',
           }}
         >
           <motion.div

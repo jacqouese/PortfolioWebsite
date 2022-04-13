@@ -37,15 +37,15 @@ function TechnologiesSection({ offsetY }) {
             </div>
             {skill.children.map((child) => (
               <div className="skill-child">
-                <h4 className="font-ligher">{child}</h4>
-                <a
-                  href={`https://github.com/jacqouese?tab=repositories&q=${convertToDashes(
-                    child
-                  )}`}
-                  target="_blank"
-                >
-                  <button className="skill-button">></button>
-                </a>
+                <h4 className="font-ligher">{child[0]}</h4>
+                {child[1] !== '' ? (
+                  <a
+                    href={`https://github.com/jacqouese?tab=repositories&q=${child[1]}`}
+                    target="_blank"
+                  >
+                    <button className="skill-button">></button>
+                  </a>
+                ) : null}
               </div>
             ))}
           </div>

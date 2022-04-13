@@ -1,4 +1,6 @@
-export function convertToDashes(string = 'testTest') {
+export function convertToDashes(string) {
+  if (string.split(' ').length === 1) return string.toLowerCase(); // if no space in string
+
   const spaced = string.replace(/([a-z])([A-Z])/g, '$1 $2');
 
   const arr = spaced.split(' ');

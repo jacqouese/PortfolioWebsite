@@ -14,8 +14,9 @@ function TopSection({ offsetY }) {
         style={{ transform: `translateY(${offsetY * 0.5}px)` }}
       >
         <motion.h1
-          animate={{ translateY: [40, 0], opacity: [0, 1] }}
           className="h1-larger"
+          animate={{ translateY: [40, 0], opacity: [0, 1] }}
+          transition={{ duration: 0.4 }}
         >
           {t('top.1.1')}{' '}
           <span className="span-primary-color">{t('top.1.2')}</span>
@@ -23,7 +24,7 @@ function TopSection({ offsetY }) {
         <motion.h1
           className="h2-larger"
           animate={{ translateY: [40, 0], opacity: [0, 1] }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
         >
           {t('top.2.1')} <br />
           <span className="span-primary-color">{t('top.2.2')}</span>{' '}
@@ -31,8 +32,8 @@ function TopSection({ offsetY }) {
         </motion.h1>
         <motion.div
           className="top-section-button-container"
-          animate={{ translateY: [40, 0], opacity: [0, 1] }}
-          transition={{ delay: 0.4 }}
+          animate={{ translateX: [-40, 0], opacity: [0, 1] }}
+          transition={{ delay: 0.6, duration: 0.6 }}
         >
           <button>{t('top.3.1')}</button>
           <button className="secondary">{t('top.3.2')}</button>
