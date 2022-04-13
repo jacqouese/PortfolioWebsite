@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SvgBlob } from 'react-svg-blob';
+import githubImg from '../assets/github.png';
 
 import projects from '../data/projects';
 import { useTranslation } from 'react-i18next';
@@ -20,9 +21,10 @@ function ProjectsSection({ offsetY }) {
         <motion.div
           className="project-container"
           style={{ backgroundColor: project.colors.primary }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 0.8 }}
           initial={{ translateY: 100, opacity: 0, perspective: 3000 }}
           whileInView={{ translateY: 0, opacity: 1, perspective: 3000 }}
+          viewport={{ margin: '0px 0px -200px 0px', once: true }}
           whileHover={{
             perspective: 1500,
             rotateY: '4deg',
@@ -31,9 +33,10 @@ function ProjectsSection({ offsetY }) {
         >
           <motion.div
             className="project-container-text"
-            transition={{ duration: 0.9, delay: 0.1 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
             initial={{ translateY: -100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
+            viewport={{ margin: '0px 0px -200px 0px', once: true }}
           >
             <h1>{project.name}</h1>
             <p>{project.title[i18n.language]}</p>
@@ -63,7 +66,8 @@ function ProjectsSection({ offsetY }) {
                 target="_blank"
                 className="project-button"
                 style={{ backgroundColor: project.colors.darker }}
-              >
+              > 
+                <img src={githubImg} alt="" className="icon-img"/>
                 {t('projects.2.2')}
               </a>
             </div>
@@ -72,9 +76,10 @@ function ProjectsSection({ offsetY }) {
             <motion.img
               src={project.image}
               alt=""
-              transition={{ duration: 0.9, delay: 0.1 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
               initial={{ opacity: 0, translateY: 100 }}
               whileInView={{ opacity: 1, translateY: 0 }}
+              viewport={{ margin: '0px 0px -200px 0px', once: true }}
               className="project-img"
             />
 

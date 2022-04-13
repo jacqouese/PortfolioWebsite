@@ -20,8 +20,8 @@ function Header() {
                 <p>Jakub</p>
             </div>
             <div className="header-links">
-                <a href="">Home</a>
-                <a href="https://github.com/jacqouese?tab=repositories" target="_blank">All projects</a>
+                <a href="https://github.com/jacqouese" target="_blank">Github</a>
+                <a href="" target="_blank">Resume</a>
                 <div>
                   <div className="header-menu">
                     <img src={ i18n.language == 'en' ? usFlag : polishFlag } alt="" className="header-flag"/>

@@ -36,7 +36,9 @@ p {
 a {
   color: rgb(200, 200, 200);
   text-decoration: none;
+  transition: 0.2s ease-out;
 }
+
 a:visited {
   color: rgb(200, 200, 200);
 }
@@ -90,11 +92,12 @@ header {
   width: 100%;
   background-color: $primary;
   z-index: 10;
+  opacity: 0.9;
 }
 
 header, footer {
   a:hover {
-    text-decoration: underline;
+    color: #7f93bd;
   }
 }
 
@@ -349,6 +352,13 @@ button.skill-button:hover {
   font-size: 80%;
   text-decoration: none;
   border-radius: 0.5rem;
+}
+
+.icon-img {
+  max-width: 12px;
+  filter: invert(100%);
+  margin-right: 10px;
+  transform: translateY(1px) scale(1.4);
 }
 
 .project-container-text p.font-smaller {

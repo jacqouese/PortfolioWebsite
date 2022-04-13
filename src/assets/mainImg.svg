@@ -91,7 +91,7 @@
   <defs>
    <image id="image-1" width="22px" height="75px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAABLCAYAAAB0pHcSAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFqADAAQAAAABAAAASwAAAADcojggAAABeklEQVRYCe2V0W3DMAxESadrdIpO0HE6Qv/y1a1rlqQCRidbThTYBgpQQQIiok7040lmImKiq373HNeZ3z8+f4Toe09ZIf6a9hSstVI4aByG4i22sEDtIfrhEfPpGjPs7ccCHyAsMqvybPpjgyfiCasBYZ6UjGDCMzusLQFhFxniULZdK+Ws5mnrnPMzAO45rIxpi7Gl2mPJKI4VFsjYBPlS3HMv6KXoJMaGQYZdfDtQyANQeONmPSSDQ7RxrAjrAcLe3QvuXCf34+UaEC4Ll0l9wf7MOc3zxslvv4zejFm08T6gMAhC9hBjzmDPR4QgbL5pd+4V+ej/cxh7FX7R42NtVVcy9bdZAiheOSDeDXuD2A1XDRBeu/6q3H7YOMISQdhXriT1FfszWH8/b3gGK9abrbxBBn1sL+EtxqWsZYcfl9tYQhdgxf/hgBzWvBQOAyWKRBEEIkhXJIogEEG6IlEEgQjSFYkiCESQrkgUQSCCdEWiCAIRHOaKPyUPOumQoaPOAAAAAElFTkSuQmCC"/>
   </defs>
-  <use id="side-nav" xlink:href="#image-1" x="373px" y="207px" width="22px" height="75px"/>
+  <use id="side-nav" xlink:href="#image-1" x="374px" y="207px" width="22px" height="75px"/>
  </g>
   <g id="browser">
   <path id="bar" d="M373 209 L513 209 513 205.277 373 205.277 Z" fill="#24272a" fill-opacity="1" stroke="none"/>
