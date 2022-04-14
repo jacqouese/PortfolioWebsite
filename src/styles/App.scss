@@ -156,7 +156,6 @@ img.header-flag {
 }
 
 .top-section {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -169,6 +168,16 @@ img.header-flag {
   button {
     margin-right: 0.8rem;
   }
+}
+
+.top-section-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1070px;
+  max-width: 100%;
+  padding: 0 2rem;
 }
 
 .top-section-text-container {
@@ -347,11 +356,15 @@ button.skill-button:hover {
 
 .project-container a {
   padding: 0.6rem 1.2rem;
-  margin-right: 1rem;
   color: white;
   font-size: 80%;
   text-decoration: none;
   border-radius: 0.5rem;
+}
+
+.project-container-buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 .icon-img {

@@ -5,11 +5,11 @@
     }
 
     .top-section-image-container {
-        max-width: 50%;
+        max-width: 60%;
         svg {
           max-width: 100%;
         }
-      }
+    }
 
     .skills-container {
         width: 600px;
@@ -47,9 +47,19 @@
         font-size: 0.7rem;
     }
 
-    .top-section {
+    .top-section-inner {
         flex-direction: column-reverse;
         gap: 2rem;
+    }
+
+    .top-section-image-container {
+        max-height: 500px;
+        max-width: 90%;
+        svg {
+            max-width: 100%;
+            max-height: 100%;
+            transform: translateY(-60px);
+          }
     }
 
     .skills-container {

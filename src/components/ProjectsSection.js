@@ -79,7 +79,7 @@ function ProjectsSection({ offsetY }) {
               transition={{ duration: 0.7, delay: 0.1 }}
               initial={{ opacity: 0, translateY: 100 }}
               whileInView={{ opacity: 1, translateY: 0 }}
-              viewport={{ margin: '0px 0px -200px 0px', once: true }}
+              viewport={{ margin: '0px 0px -180px 0px', once: true }}
               className="project-img"
             />
 
