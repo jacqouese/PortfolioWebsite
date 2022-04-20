@@ -23,15 +23,20 @@ function App() {
     <div className="App">
       <Header />
       <TopSection offsetY={offsetY} />
-      <BelowTopSection />
       <motion.div
-        className="lower-sections"
-        transition={{ duration: 1.5, delay: 0.5 }}
-        initial={{ backgroundColor: '#242a36' }}
-        whileInView={{ backgroundColor: '#141618' }}
-      >
-        <TechnologiesSection offsetY={offsetY} />
-        <ProjectsSection offsetY={offsetY} />
+          className="test"
+          transition={{ duration: 1, delay: 0.2 }}
+          initial={{ backgroundColor: '#1860A5' }}
+          whileInView={{ backgroundColor: '#F9F9F9' }}
+          viewport={{ margin: '0px 0px -280px 0px', once: true }}
+        >
+        <BelowTopSection />
+        <div
+          className="lower-sections"
+        >
+          <TechnologiesSection offsetY={offsetY} />
+          <ProjectsSection offsetY={offsetY} />
+        </div>
       </motion.div>
       <Footer />
     </div>
