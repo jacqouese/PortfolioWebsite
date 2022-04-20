@@ -9,6 +9,11 @@ import { useTranslation } from 'react-i18next';
 function ProjectsSection({ offsetY }) {
   const { t, i18n } = useTranslation('translations');
 
+  const imgScale = {
+    initial: { scale: 0 },
+    hovering: { scale: 1.02 },
+  }
+
   return (
     <div className="projects-section">
       <motion.h1
@@ -21,19 +26,15 @@ function ProjectsSection({ offsetY }) {
         <motion.div
           className="project-container"
           style={{ backgroundColor: project.colors.primary }}
-          transition={{ duration: 0.8 }}
-          initial={{ translateY: 100, opacity: 0, perspective: 3000 }}
+          transition={{ duration: 0.7 }}
+          initial={[{ translateY: 100, opacity: 0, perspective: 3000 }, 'initial']}
           whileInView={{ translateY: 0, opacity: 1, perspective: 3000 }}
           viewport={{ margin: '0px 0px -200px 0px', once: true }}
-          whileHover={{
-            perspective: 1500,
-            rotateY: '4deg',
-            rotateX: '-4deg',
-          }}
+          whileHover="hovering"
         >
           <motion.div
             className="project-container-text"
-            transition={{ duration: 0.7, delay: 0.1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             initial={{ translateY: -100, opacity: 0 }}
             whileInView={{ translateY: 0, opacity: 1 }}
             viewport={{ margin: '0px 0px -200px 0px', once: true }}
@@ -76,11 +77,12 @@ function ProjectsSection({ offsetY }) {
             <motion.img
               src={project.image}
               alt=""
-              transition={{ duration: 0.7, delay: 0.1 }}
-              initial={{ opacity: 0, translateY: 100 }}
-              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              initial={{ opacity: 0, translateY: 100, scale: 0.95 }}
+              whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
               viewport={{ margin: '0px 0px -180px 0px', once: true }}
               className="project-img"
+              variants={imgScale}
             />
 
             <div className="blob-img">
