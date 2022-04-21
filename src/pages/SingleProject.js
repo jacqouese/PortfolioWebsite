@@ -26,7 +26,7 @@ function SingleProject() {
                     style={{ backgroundColor: project.colors.primary }}
                     initial={{ width: 1020, height: 440, translateY: 'calc(50vh - 220px)' }}
                     animate={{ width: window.innerWidth, height: 550, translateY: 0 }}
-                    transition={{ delay: 1, duration: 1.2, ease: 'anticipate' }}
+                    transition={{ delay: 0.5, duration: 1.2, ease: 'anticipate' }}
                >
                     <div className="project-container-text">
                         <h1>{project.name}</h1>
@@ -69,7 +69,7 @@ function SingleProject() {
                         className="project-img"
                         initial={{ scale: 1.02 }}
                         animate={{ scale: 1 }}
-                        transition={{delay: 1, duration: 0.5}}
+                        transition={{delay: 0.7, duration: 0.5}}
                         />
                         <div className="blob-img">
                   <SvgBlob
@@ -85,7 +85,7 @@ function SingleProject() {
                 className="single-project-description" 
                 initial={{ opacity: 0, translateY: -10 }} 
                 animate={{ opacity: 1, translateY: 0 }} 
-                transition={{ delay: 1.7, duration: 0.5, ease: 'easeIn' }}
+                transition={{ delay: 1.2, duration: 0.5, ease: 'easeIn' }}
             >
                 <div>
                     <h3>Description</h3>
@@ -112,6 +112,15 @@ function SingleProject() {
                         }}
                     ></p>
                 </div>
+            </motion.div>
+            <motion.div 
+                className="single-project-bottom-container" 
+                style={{ backgroundColor: project.colors.primary }}
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }} 
+                transition={{ delay: 1.2, duration: 0.5, ease: 'easeIn' }}
+            >
+
             </motion.div>
         </div>
     )

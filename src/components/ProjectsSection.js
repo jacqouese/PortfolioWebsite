@@ -1,30 +1,31 @@
 import React from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { SvgBlob } from 'react-svg-blob';
-import githubImg from '../assets/github.png';
-
-import projects from '../data/projects';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Link, useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { SvgBlob } from 'react-svg-blob';
+
+import githubImg from '../assets/github.png';
+import projects from '../data/projects';
+
 
 function ProjectsSection({ offsetY }) {
   const { t, i18n } = useTranslation('translations');
+  const navigate = useNavigate();
 
   const imgScale = {
     initial: { scale: 0 },
     hovering: { scale: 1.02 },
   }
 
-  
-
-
-  const navigate = useNavigate();
   const handleNavigation = (id) => {
+    // scroll clicked element into the center
     document.getElementById(`project${id}`).scrollIntoView({
         behavior: 'smooth',
         block: 'center',
         inline: 'center'
     });
+
+    // set opacity to 0 for every element but the clicked
     const elems = document.querySelectorAll('.project-container-wrapper');
     elems.forEach((elem) => {
       if (elem.id != `project${id}`) {
@@ -34,6 +35,7 @@ function ProjectsSection({ offsetY }) {
       }
     });
 
+    // navigate to page
     setTimeout(() => {
       navigate(`project/${id}`);
     }, 720)
