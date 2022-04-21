@@ -30,7 +30,7 @@ function TechnologiesSection({ offsetY }) {
                 transition={{ duration: 0.3, delay: 0.2 * (skill.id / 2) }}
                 initial={{ translateY: -80, opacity: 0, scale: 0.8 }}
                 whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
-                viewport={{ margin: '0px 0px -200px 0px', once: true }}
+                viewport={{ margin: '0px 0px -220px 0px', once: true }}
               >
                 <img
                   src={'/imgs/' + skill.icon + '.svg'}

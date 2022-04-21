@@ -68,7 +68,7 @@ function ProjectsSection({ offsetY }) {
                 transition={{ duration: 0.4, delay: 0.1 }}
                 initial={{ translateY: -50, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
-                viewport={{ margin: '0px 0px -200px 0px', once: true }}
+                viewport={{ margin: '0px 0px -220px 0px', once: true }}
               >
                 <h1>{project.name}</h1>
                 <p>{project.title[i18n.language]}</p>
@@ -111,7 +111,7 @@ function ProjectsSection({ offsetY }) {
                   transition={{ duration: 0.4, delay: 0.1 }}
                   initial={{ opacity: 0, translateY: 50, scale: 0.95 }}
                   whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
-                  viewport={{ margin: '0px 0px -180px 0px', once: true }}
+                  viewport={{ margin: '0px 0px -190px 0px', once: true }}
                   className="project-img"
                   variants={imgScale}
                 />
