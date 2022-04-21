@@ -308,22 +308,43 @@ button.skill-button:hover {
   border-radius: 0.2rem;
 }
 
+.project-container-wrapper {
+  position: relative;
+  border-radius: 0.2rem;
+  transition: 300ms ease-out;
+}
+
 .project-container {
   position: relative;
   display: flex;
   width: 1020px;
   max-width: 100%;
-  padding: 5rem;
+  height: 440px;
+  padding: 4.5rem;
   margin-bottom: 5rem;
   border-radius: 0.2rem;
   overflow: hidden;
-  box-shadow: rgba(150, 150, 150, 0.1) 0px 15px 25px
+  // box-shadow: rgba(150, 150, 150, 0.1) 0px 15px 25px;
+}
+
+.project-container-absolute-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+  top:0;
+  left: 50%;
+  background-color: inherit;
+  border-radius: inherit;
 }
 
 .project-container-text {
   display: flex;
   flex-direction: column;
-  max-width: 42%;
+  justify-content: center;
+  max-width: 355px;
+  width: 42%;
+  height: 100%;
   z-index: 2;
   p.font-smaller {
     padding-right: 2rem;
@@ -360,12 +381,17 @@ button.skill-button:hover {
   max-height: 100% !important;
 }
 
-.project-container a {
+.project-container-text a {
   padding: 0.6rem 1.2rem;
   color: white;
   font-size: 80%;
   text-decoration: none;
   border-radius: 0.2rem;
+}
+
+.project-container-text button {
+  font-weight: normal;
+  border: none;
 }
 
 .project-container-buttons {
@@ -435,6 +461,6 @@ footer {
     padding: 0.5rem;
   }
 }
-
+@import './singleProject.scss';
 @import './animations.scss';
 @import './responsive.scss';

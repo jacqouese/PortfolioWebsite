@@ -5,6 +5,7 @@ import githubImg from '../assets/github.png';
 
 import projects from '../data/projects';
 import { useTranslation } from 'react-i18next';
+import { Link, useNavigate } from 'react-router-dom';
 
 function ProjectsSection({ offsetY }) {
   const { t, i18n } = useTranslation('translations');
@@ -12,6 +13,31 @@ function ProjectsSection({ offsetY }) {
   const imgScale = {
     initial: { scale: 0 },
     hovering: { scale: 1.02 },
+  }
+
+  
+
+
+  const navigate = useNavigate();
+  const handleNavigation = (id) => {
+    document.getElementById(`project${id}`).scrollIntoView({
+        behavior: 'smooth',
+        block: 'center',
+        inline: 'center'
+    });
+    const elems = document.querySelectorAll('.project-container-wrapper');
+    elems.forEach((elem) => {
+      if (elem.id != `project${id}`) {
+        setTimeout(() => {
+          elem.style.opacity = '0';
+        }, 500)
+      }
+    });
+
+    setTimeout(() => {
+      navigate(`project/${id}`);
+    }, 720)
+    
   }
 
   return (
@@ -22,83 +48,83 @@ function ProjectsSection({ offsetY }) {
       >
         {t('projects.1')}
       </motion.h1>
-      <AnimatePresence>
-        {projects.map((project, i) => (
-          <motion.div
-            key={i}
-            className="project-container"
-            style={{ backgroundColor: project.colors.primary }}
-            transition={{ duration: 0.7 }}
-            initial={[{ translateY: 100, opacity: 0, perspective: 3000 }, 'initial']}
-            whileInView={{ translateY: 0, opacity: 1, perspective: 3000 }}
-            viewport={{ margin: '0px 0px -200px 0px', once: true }}
-            whileHover="hovering"
-            exit={{ opacity: 0 }}
-          >
+      {projects.map((project, i) => (
+         <motion.div className="project-container-wrapper" id={`project${project.id}`} style={{ backgroundColor: project.colors.primary }} key={i}
+         transition={{ duration: 0.7 }}
+         initial={[{ translateY: 100, opacity: 0 }, 'initial']}
+         whileInView={{ translateY: 0, opacity: 1 }}
+         viewport={{ margin: '0px 0px -200px 0px', once: true }}
+         whileHover="hovering"
+         
+         >
+            <motion.div className="project-container-absolute-background"/>
             <motion.div
-              className="project-container-text"
-              transition={{ duration: 0.6, delay: 0.1 }}
-              initial={{ translateY: -100, opacity: 0 }}
-              whileInView={{ translateY: 0, opacity: 1 }}
-              viewport={{ margin: '0px 0px -200px 0px', once: true }}
+                       className="project-container"
             >
-              <h1>{project.name}</h1>
-              <p>{project.title[i18n.language]}</p>
-              <p
-                className="font-smaller"
-                dangerouslySetInnerHTML={{
-                  __html: project.subtitle[i18n.language],
-                }}
-              ></p>
-              <div className="project-technologies-container">
-                {project.technologies.map((technology) => (
-                  <span style={{ backgroundColor: project.colors.lighter }}>
-                    {technology}
-                  </span>
-                ))}
-              </div>
-              <div className="project-container-buttons">
-                <a
-                  href="#"
-                  className="project-button"
-                  style={{ backgroundColor: project.colors.darker }}
-                >
-                  {t('projects.2.1')}
-                </a>
-                <a
-                  href={project.url}
-                  target="_blank"
-                  className="project-button"
-                  style={{ backgroundColor: project.colors.darker }}
-                > 
-                  <img src={githubImg} alt="" className="icon-img"/>
-                  {t('projects.2.2')}
-                </a>
+              <motion.div
+                className="project-container-text"
+                transition={{ duration: 0.6, delay: 0.1 }}
+                initial={{ translateY: -100, opacity: 0 }}
+                whileInView={{ translateY: 0, opacity: 1 }}
+                viewport={{ margin: '0px 0px -200px 0px', once: true }}
+              >
+                <h1>{project.name}</h1>
+                <p>{project.title[i18n.language]}</p>
+                <p
+                  className="font-smaller"
+                  dangerouslySetInnerHTML={{
+                    __html: project.subtitle[i18n.language],
+                  }}
+                ></p>
+                <div className="project-technologies-container">
+                  {project.technologies.map((technology, j) => (
+                    <span key={j} style={{ backgroundColor: project.colors.lighter }}>
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+                <div className="project-container-buttons">
+                  <button
+                    className="project-button"
+                    style={{ backgroundColor: project.colors.darker }}
+                    onClick={() => handleNavigation(project.id)}
+                  >
+                    {t('projects.2.1')}
+                  </button>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    className="project-button"
+                    style={{ backgroundColor: project.colors.darker }}
+                  > 
+                    <img src={githubImg} alt="" className="icon-img"/>
+                    {t('projects.2.2')}
+                  </a>
+                </div>
+              </motion.div>
+              <div className="project-container-image">
+                <motion.img
+                  src={project.image}
+                  alt=""
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  initial={{ opacity: 0, translateY: 100, scale: 0.95 }}
+                  whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
+                  viewport={{ margin: '0px 0px -180px 0px', once: true }}
+                  className="project-img"
+                  variants={imgScale}
+                />
+
+                <div className="blob-img">
+                  <SvgBlob
+                    variant="solid"
+                    color={project.colors.lighter}
+                    shapeProps={{ size: 14, growth: 10, edges: 17 }}
+                  />
+                </div>
               </div>
             </motion.div>
-            <div className="project-container-image">
-              <motion.img
-                src={project.image}
-                alt=""
-                transition={{ duration: 0.6, delay: 0.1 }}
-                initial={{ opacity: 0, translateY: 100, scale: 0.95 }}
-                whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
-                viewport={{ margin: '0px 0px -180px 0px', once: true }}
-                className="project-img"
-                variants={imgScale}
-              />
-
-              <div className="blob-img">
-                <SvgBlob
-                  variant="solid"
-                  color={project.colors.lighter}
-                  shapeProps={{ size: 14, growth: 10, edges: 17 }}
-                />
-              </div>
-            </div>
-          </motion.div>
+         </motion.div>
         ))}
-      </AnimatePresence>
     </div>
   );
 }
