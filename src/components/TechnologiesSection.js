@@ -23,11 +23,11 @@ function TechnologiesSection({ offsetY }) {
         whileInView={{ translateY: 0, opacity: 1 }}
         viewport={{ margin: '0px 0px -200px 0px', once: true }}
       >
-        {skills.map((skill) => (
+        {skills.map((skill, i) => (
           <div className="skills-column">
             <div className="skill-parent">
               <motion.div
-                transition={{ duration: 0.3, delay: 0.2 }}
+                transition={{ duration: 0.3, delay: 0.2 * (i / 2) }}
                 initial={{ translateY: -80, opacity: 0, scale: 0.8 }}
                 whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
                 viewport={{ margin: '0px 0px -200px 0px', once: true }}
