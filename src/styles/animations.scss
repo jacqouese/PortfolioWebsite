@@ -142,6 +142,10 @@
     transform-origin: bottom bottom;
 }
 
+.svg-uiux {
+    animation: movePlant 1s linear;
+}
+
 @keyframes movePlant {
     20% {
       transform: rotate(-10deg);

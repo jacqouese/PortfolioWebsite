@@ -2,7 +2,7 @@ const skills = [
   {
     id: 1,
     name: 'Front-end',
-    icon: 'ai-desktop-device',
+    icon: 'frontend',
     children: [
       ['HTML', ''],
       ['CSS/SCSS', ''],
@@ -14,7 +14,7 @@ const skills = [
   {
     id: 2,
     name: 'Back-end',
-    icon: 'ai-align-right',
+    icon: 'backend',
     children: [
       ['PHP', 'php'],
       ['Laravel', 'laravel'],
@@ -24,7 +24,7 @@ const skills = [
   {
     id: 3,
     name: 'UX/UI',
-    icon: 'ai-pencil',
+    icon: 'uiux',
     children: [
       ['Photoshop', ''],
       ['Figma', ''],
@@ -33,7 +33,7 @@ const skills = [
   {
     id: 4,
     name: 'Tools/Other',
-    icon: 'ai-gear',
+    icon: 'tools',
     children: [
       ['GIT', ''],
       ['npm', ''],
