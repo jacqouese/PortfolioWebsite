@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactComponent as ReactIcon } from '../assets/reactIcon.svg'
 
 function Footer() {
   return (
@@ -32,7 +33,10 @@ function Footer() {
       <div className="footer-bottom">
         <hr />
         <div>
-          <p>Made in React</p>
+          <div style={{display: 'flex', alignItems: 'center', padding: 0}}>
+            <p>Made in React</p>
+            <ReactIcon style={{maxHeight: 15}} />
+          </div>
           <p>Jakub Czaja all rights reserved</p>
         </div>
       </div>
