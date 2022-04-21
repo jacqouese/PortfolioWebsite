@@ -29,7 +29,7 @@ function App() {
             <Route path="/project/:id" element={<SingleProject />}></Route>
           </Routes>
         </AnimatePresence>
-        
+        <Footer />
       </div>
   );
 }

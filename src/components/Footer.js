@@ -5,15 +5,15 @@ function Footer() {
     <footer>
       <div className="footer-links">
         <div>
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-            voluptates.
+          <h3>Attributions:</h3>
+          <p className="font-smaller">
+            main ilustration: created by unDraw.co, animated by me
           </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
-            voluptates.
+          <p className="font-smaller">skill icons: svgrepo.com</p>
+          <p className="font-smaller">
+            linguesia mockup: freepick.com by user17882893
           </p>
+          <p>Thank you for letting me use your assets</p>
         </div>
         <div>
           <h3>Quick links</h3>

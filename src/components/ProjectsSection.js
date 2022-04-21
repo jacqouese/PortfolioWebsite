@@ -52,8 +52,8 @@ function ProjectsSection({ offsetY }) {
       </motion.h1>
       {projects.map((project, i) => (
          <motion.div className="project-container-wrapper" id={`project${project.id}`} style={{ backgroundColor: project.colors.primary }} key={i}
-         transition={{ duration: 0.7 }}
-         initial={[{ translateY: 100, opacity: 0 }, 'initial']}
+         transition={{ duration: 0.5 }}
+         initial={[{ translateY: 50, opacity: 0 }, 'initial']}
          whileInView={{ translateY: 0, opacity: 1 }}
          viewport={{ margin: '0px 0px -200px 0px', once: true }}
          whileHover="hovering"
@@ -65,8 +65,8 @@ function ProjectsSection({ offsetY }) {
             >
               <motion.div
                 className="project-container-text"
-                transition={{ duration: 0.6, delay: 0.1 }}
-                initial={{ translateY: -100, opacity: 0 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
+                initial={{ translateY: -50, opacity: 0 }}
                 whileInView={{ translateY: 0, opacity: 1 }}
                 viewport={{ margin: '0px 0px -200px 0px', once: true }}
               >
@@ -108,8 +108,8 @@ function ProjectsSection({ offsetY }) {
                 <motion.img
                   src={project.image}
                   alt=""
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  initial={{ opacity: 0, translateY: 100, scale: 0.95 }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                  initial={{ opacity: 0, translateY: 50, scale: 0.95 }}
                   whileInView={{ opacity: 1, translateY: 0, scale: 1 }}
                   viewport={{ margin: '0px 0px -180px 0px', once: true }}
                   className="project-img"
