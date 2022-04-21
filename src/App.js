@@ -8,6 +8,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Home from './pages/Home';
 
 function App() {
   const [offsetY, setOffsetY] = useState(0);
@@ -22,21 +23,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TopSection offsetY={offsetY} />
-      <motion.div
-          // transition={{ duration: 1, delay: 0.2 }}
-          // initial={{ backgroundColor: '#e1e1e1' }}
-          // whileInView={{ backgroundColor: '#F9F9F9' }}
-          // viewport={{ margin: '0px 0px -280px 0px', once: true }}
-        >
-        <BelowTopSection />
-        <div
-          className="lower-sections"
-        >
-          <TechnologiesSection offsetY={offsetY} />
-          <ProjectsSection offsetY={offsetY} />
-        </div>
-      </motion.div>
+      <Home offsetY={offsetY} />
       <Footer />
     </div>
   );
