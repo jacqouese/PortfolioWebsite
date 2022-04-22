@@ -1,15 +1,16 @@
 import './styles/App.scss';
-import TopSection from './components/TopSection';
-import BelowTopSection from './components/BelowTopSection';
-import TechnologiesSection from './components/TechnologiesSection';
-import ProjectsSection from './components/ProjectsSection';
 
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Home from './pages/Home';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import SingleProject from './pages/SingleProject';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
+
   const [offsetY, setOffsetY] = useState(0);
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -20,25 +21,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Header />
-      <TopSection offsetY={offsetY} />
-      <motion.div
-          // transition={{ duration: 1, delay: 0.2 }}
-          // initial={{ backgroundColor: '#e1e1e1' }}
-          // whileInView={{ backgroundColor: '#F9F9F9' }}
-          // viewport={{ margin: '0px 0px -280px 0px', once: true }}
-        >
-        <BelowTopSection />
-        <div
-          className="lower-sections"
-        >
-          <TechnologiesSection offsetY={offsetY} />
-          <ProjectsSection offsetY={offsetY} />
-        </div>
-      </motion.div>
-      <Footer />
-    </div>
+      <div className="App">
+        <Header />
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home offsetY={offsetY} />}></Route>
+            <Route path="/project/:id" element={<SingleProject />}></Route>
+          </Routes>
+        <Footer />
+      </div>
   );
 }
 

@@ -24,13 +24,13 @@ function TechnologiesSection({ offsetY }) {
         viewport={{ margin: '0px 0px -200px 0px', once: true }}
       >
         {skills.map((skill) => (
-          <div className="skills-column">
+          <div key={skill.id} className="skills-column">
             <div className="skill-parent">
               <motion.div
-                transition={{ duration: 0.3, delay: 0.2 }}
+                transition={{ duration: 0.3, delay: 0.2 * (skill.id / 2) }}
                 initial={{ translateY: -80, opacity: 0, scale: 0.8 }}
                 whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
-                viewport={{ margin: '0px 0px -200px 0px', once: true }}
+                viewport={{ margin: '0px 0px -220px 0px', once: true }}
               >
                 <img
                   src={'/imgs/' + skill.icon + '.svg'}
@@ -40,15 +40,15 @@ function TechnologiesSection({ offsetY }) {
                 <h3>{skill.name}</h3>
               </motion.div>
             </div>
-            {skill.children.map((child) => (
-              <div className="skill-child">
+            {skill.children.map((child, i) => (
+              <div key={i} className="skill-child">
                 <h4 className="font-ligher">{child[0]}</h4>
                 {child[1] !== '' ? (
                   <a
                     href={`https://github.com/jacqouese?tab=repositories&q=${child[1]}`}
                     target="_blank"
                   >
-                    <button className="skill-button">></button>
+                    <button className="skill-button">&gt;</button>
                   </a>
                 ) : null}
               </div>
