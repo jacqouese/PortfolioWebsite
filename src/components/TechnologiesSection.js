@@ -48,7 +48,7 @@ function TechnologiesSection({ offsetY }) {
                     href={`https://github.com/jacqouese?tab=repositories&q=${child[1]}`}
                     target="_blank"
                   >
-                    <button className="skill-button">></button>
+                    <button className="skill-button">&gt;</button>
                   </a>
                 ) : null}
               </div>

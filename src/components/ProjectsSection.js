@@ -97,7 +97,7 @@ function ProjectsSection({ offsetY }) {
                     href={project.url}
                     target="_blank"
                     className="project-button"
-                    style={{ backgroundColor: project.colors.darker }}
+                    style={{ backgroundColor: project.colors.darker}}
                   > 
                     <img src={githubImg} alt="" className="icon-img"/>
                     {t('projects.2.2')}

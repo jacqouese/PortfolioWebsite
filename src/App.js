@@ -23,12 +23,10 @@ function App() {
   return (
       <div className="App">
         <Header />
-        <AnimatePresence>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home offsetY={offsetY} />}></Route>
             <Route path="/project/:id" element={<SingleProject />}></Route>
           </Routes>
-        </AnimatePresence>
         <Footer />
       </div>
   );

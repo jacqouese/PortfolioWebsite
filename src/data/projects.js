@@ -19,6 +19,7 @@ const projects = [
       darker: '#0E2439',
     },
     url: 'https://github.com/jacqouese/ProjectC',
+    videoRadius: 10,
   },
   {
     id: 2,
@@ -40,6 +41,7 @@ const projects = [
       darker: '#0E422B',
     },
     url: 'https://github.com/jacqouese/Linguesia',
+    videoRadius: 34,
   },
   {
     id: 3,
@@ -61,6 +63,7 @@ const projects = [
       darker: '#301904',
     },
     url: 'https://github.com/jacqouese/YouTubeScreenTime',
+    videoRadius: 10,
   },
   {
     id: 4,
@@ -82,6 +85,7 @@ const projects = [
       darker: '#082E31',
     },
     url: 'https://github.com/jacqouese/TablerPlus',
+    videoRadius: 10,
   },
   {
     id: 5,
@@ -103,6 +107,7 @@ const projects = [
       darker: '#021B1E',
     },
     url: 'https://github.com/jacqouese/project-k',
+    videoRadius: 10,
   },
 ];
 
