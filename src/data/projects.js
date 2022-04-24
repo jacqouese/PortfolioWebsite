@@ -30,7 +30,7 @@ const projects = [
       pl: 'Aplikacja mobilna do nauki języków',
     },
     subtitle: {
-      en: 'Learn German with the help of flashcards. Abbility to learn verbs, word genders, irregular verbs. <ul> <li>Cross platform with React Native</li> <li>Laravel API for storing flashcards</li> <li>SQLite for storing progress</li> </ul>',
+      en: 'Learn German with the help of flashcards. Abbility to <br /> learn verbs, word genders, irregular verbs. <ul> <li>Cross platform with React Native</li> <li>Laravel API for storing flashcards</li> <li>SQLite for storing progress</li> </ul>',
       pl: 'Ucz się niemieckiego za pomocą fiszek. Możliwość uczenia się czasowników, rodzajników wyrazów, czasowników nieregularnych. <ul> <li>Międzyplatformowa z React Native</li> <li>API Laravel do przechowywania fiszek</li> <li>SQLite do przechowywania postępu</li> </ul>',
     },
     technologies: ['React Native', 'Laravel API', 'SQL', 'SQLite'],

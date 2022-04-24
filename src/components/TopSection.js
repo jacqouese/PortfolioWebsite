@@ -9,8 +9,8 @@ function TopSection({ offsetY }) {
 
   return (
     <div className="top-section">
-     <div className="top-section-inner">
-      <div
+      <div className="top-section-inner">
+        <div
           className="top-section-text-container"
           style={{ transform: `translateY(${offsetY * 0.5}px)` }}
         >
@@ -23,9 +23,9 @@ function TopSection({ offsetY }) {
             <span className="span-primary-color">{t('top.1.2')}</span>
           </motion.h1>
           <motion.h1
-            className="h2-larger"
             animate={{ translateY: [40, 0], opacity: [0, 1] }}
             transition={{ delay: 0.2, duration: 0.4 }}
+            style={{ fontWeight: '300' }}
           >
             {t('top.2.1')} <br />
             <span className="span-primary-color">{t('top.2.2')}</span>{' '}
@@ -46,7 +46,7 @@ function TopSection({ offsetY }) {
         >
           <MainSvg />
         </div>
-     </div>
+      </div>
     </div>
   );
 }

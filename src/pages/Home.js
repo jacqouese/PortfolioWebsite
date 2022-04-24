@@ -3,6 +3,7 @@ import TopSection from '../components/TopSection';
 import BelowTopSection from '../components/BelowTopSection';
 import TechnologiesSection from '../components/TechnologiesSection';
 import ProjectsSection from '../components/ProjectsSection';
+import ContactSection from '../components/ContactSection';
 
 import { motion } from 'framer-motion';
 
@@ -21,6 +22,7 @@ function Home({ offsetY }) {
           <TechnologiesSection offsetY={offsetY} />
           <ProjectsSection offsetY={offsetY} />
         </div>
+        <ContactSection offsetY={offsetY} />
       </motion.div>
     </>
   );
