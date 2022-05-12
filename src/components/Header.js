@@ -23,7 +23,7 @@ function Header() {
           <a href="https://github.com/jacqouese" target="_blank">
             Github
           </a>
-          <a href="" target="_blank">
+          <a href="/resume.pdf" target="_blank">
             Resume
           </a>
           <div>

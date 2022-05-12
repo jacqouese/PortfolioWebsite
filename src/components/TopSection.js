@@ -37,7 +37,9 @@ function TopSection({ offsetY }) {
             transition={{ delay: 0.6, duration: 0.6 }}
           >
             <button>{t('top.3.1')}</button>
-            <button className="secondary">{t('top.3.2')}</button>
+            <a href="/resume.pdf" target="_blank">
+              <button className="secondary">{t('top.3.2')}</button>
+            </a>
           </motion.div>
         </div>
         <div

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as ReactIcon } from '../assets/reactIcon.svg'
+import { ReactComponent as ReactIcon } from '../assets/reactIcon.svg';
 
 function Footer() {
   return (
@@ -7,13 +7,9 @@ function Footer() {
       <div className="footer-links">
         <div>
           <h3>Attributions:</h3>
-          <p className="font-smaller">
-            main ilustration: created by unDraw.co, animated by me
-          </p>
-          <p className="font-smaller">skill icons: svgrepo.com</p>
-          <p className="font-smaller">
-            linguesia mockup: freepick.com by user17882893
-          </p>
+          <p>main svg: made by unDraw.co, animated by me</p>
+          <p>skill icons: svgrepo.com</p>
+          <p>linguesia mockup: freepick.com by user17882893</p>
           <p>Thank you for letting me use your assets</p>
         </div>
         <div>
@@ -33,9 +29,9 @@ function Footer() {
       <div className="footer-bottom">
         <hr />
         <div>
-          <div style={{display: 'flex', alignItems: 'center', padding: 0}}>
+          <div style={{ display: 'flex', alignItems: 'center', padding: 0 }}>
             <p>Made in React</p>
-            <ReactIcon style={{maxHeight: 15}} />
+            <ReactIcon style={{ maxHeight: 15 }} />
           </div>
           <p>Jakub Czaja all rights reserved</p>
         </div>

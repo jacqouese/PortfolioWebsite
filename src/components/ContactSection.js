@@ -26,14 +26,14 @@ function ContactSection( {offsetY} ) {
         </div>
         <motion.div className="contact-inner" whileInView={() => triggerEnvelopeAnimation}>
             <div className="contact-inner-wrapper">
-              <div className="shape-left">
-                  <ShapeLeft />
-              </div>
               <div className="shape-right">
                   <ShapeRight />
               </div>
+              <div className="contact-svg">
+                <EnvelopeIcon />
+              </div>
               <div className="contact-text">
-                <h1>Thanks for checking out my website</h1>
+                <h2>Thanks for checking out my website</h2>
                 <h3>Here are my contact details:</h3>
                 <div>
                   <p>jakub003@proton.me</p>
@@ -42,9 +42,6 @@ function ContactSection( {offsetY} ) {
                     <img src={GithubIcon} alt="" style={{ maxWidth: 20, filter: 'invert(100%)' }}/>
                   </span>
                 </div>
-              </div>
-              <div className="contact-svg">
-                <EnvelopeIcon />
               </div>
             </div>
         </motion.div>
