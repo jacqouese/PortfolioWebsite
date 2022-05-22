@@ -31,5 +31,22 @@
       "1": "Detailed info",
       "2": "Source code"
     }
+  },
+  "contact": {
+    "1": "Kontakt",
+    "2": "Thanks for checking out my website!",
+    "3": "Here are my contact details:"
+  },
+  "singleProject": {
+    "1": "Description",
+    "2": "Technical details",
+    "3": {
+      "1": "Other information",
+      "2": {
+        "1": "Languages",
+        "2": "Avaliable for",
+        "3": "Category"
+      }
+    }
   }
 }

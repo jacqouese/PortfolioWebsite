@@ -5,11 +5,14 @@ import {ReactComponent as EnvelopeIcon} from '../assets/envelope.svg'
 import {ReactComponent as ShapeLeft} from '../assets/shape1.svg'
 import {ReactComponent as ShapeRight} from '../assets/shape2.svg'
 import GithubIcon from '../assets/github.png';
+import { useTranslation } from 'react-i18next';
 
 function ContactSection( {offsetY} ) {
   const triggerEnvelopeAnimation = () => {
     document.querySelector('.svg-envelope').classList.add('animate');
   }
+
+  const { t, i18n } = useTranslation('translations');
   
 
   return (
@@ -20,7 +23,7 @@ function ContactSection( {offsetY} ) {
               className="h1-outline"
               style={{ transform: `translateX(${offsetY * 0.2 - 1350}px)` }}
             >
-              Contact
+              {t('contact.1')}
             </motion.h1>
           </div>
         </div>
@@ -33,8 +36,8 @@ function ContactSection( {offsetY} ) {
                 <EnvelopeIcon />
               </div>
               <div className="contact-text">
-                <h2>Thanks for checking out my website</h2>
-                <h3>Here are my contact details:</h3>
+                <h2>{t('contact.2')}</h2>
+                <h3>{t('contact.3')}</h3>
                 <div>
                   <p>jakub003@proton.me</p>
                   <span>
