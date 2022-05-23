@@ -24,7 +24,7 @@ function Header() {
             Github
           </a>
           <a href="/resume.pdf" target="_blank">
-            Resume
+            {t('footer.3.2')}
           </a>
           <div>
             <div className="header-menu">

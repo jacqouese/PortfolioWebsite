@@ -36,7 +36,7 @@ function ProjectsSection({ offsetY }) {
 
     // navigate to page
     setTimeout(() => {
-      navigate(`project/${id}`);
+      navigate(`project/${id}?lng=${i18n.language}`);
     }, 720);
   };
 

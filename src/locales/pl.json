@@ -29,7 +29,9 @@
     "1": "Moje wyróżnone projekty",
     "2": {
       "1": "Więcej info",
-      "2": "Kod źródłowy"
+      "2": "Kod źródłowy",
+      "3": "Obejrzyj wideo",
+      "4": "Zatrzymaj wideo"
     }
   },
   "contact": {
@@ -47,6 +49,25 @@
         "2": "Dostęne na",
         "3": "Kategoria"
       }
+    }
+  },
+  "footer": {
+    "1": {
+      "1": "Atrybucje:",
+      "2": "Dziękuję za użyczenie zasobów."
+    },
+    "2": {
+      "1": "Linki",
+      "2": {
+        "1": "Dom",
+        "2": "O mnie",
+        "3": "Technolgie",
+        "4": "Projekty"
+      }
+    },
+    "3": {
+      "1": "Kontakt",
+      "2": "Moje CV"
     }
   }
 }

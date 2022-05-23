@@ -1,29 +1,34 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { ReactComponent as ReactIcon } from '../assets/reactIcon.svg';
 
 function Footer() {
+  const { t, i18n } = useTranslation('translations');
+
   return (
     <footer>
       <div className="footer-links">
         <div>
-          <h3>Attributions:</h3>
+          <h3>{t('footer.1.1')}</h3>
           <p>main svg: made by unDraw.co, animated by me</p>
           <p>skill icons: svgrepo.com</p>
           <p>linguesia mockup: freepick.com by user17882893</p>
-          <p>Thank you for letting me use your assets</p>
+          <p>{t('footer.1.2')}</p>
         </div>
         <div>
-          <h3>Quick links</h3>
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Skills</a>
-          <a href="">Projects</a>
+          <h3>{t('footer.2.1')}</h3>
+          <a href="">{t('footer.2.2.1')}</a>
+          <a href="">{t('footer.2.2.2')}</a>
+          <a href="">{t('footer.2.2.3')}</a>
+          <a href="">{t('footer.2.2.4')}</a>
         </div>
         <div>
-          <h3>Quick contact</h3>
+          <h3>{t('footer.3.1')}</h3>
           <p>email: jakub003@pm.me</p>
           <a href="https://github.com/jacqouese">GitHub</a>
-          <a href="">Resume</a>
+          <a href="">
+            <a href="">{t('footer.3.2')}</a>
+          </a>
         </div>
       </div>
       <div className="footer-bottom">

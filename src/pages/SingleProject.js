@@ -10,7 +10,7 @@ function SingleProject() {
   const { t, i18n } = useTranslation('translations');
   const { id } = useParams();
 
-  const [buttonName, setButtonName] = useState('Detailed info');
+  const [buttonName, setButtonName] = useState(t('projects.2.1'));
   const [isVideo, setIsVideo] = useState(true);
 
   const projectIndex = projects.findIndex((elem) => elem.id == id);
@@ -23,7 +23,7 @@ function SingleProject() {
 
   const changeButtonName = () => {
     setTimeout(() => {
-      setButtonName('Watch video');
+      setButtonName(t('projects.2.3'));
     }, 2000);
   };
 
@@ -33,9 +33,9 @@ function SingleProject() {
 
   useEffect(() => {
     if (isVideo === false) {
-      setButtonName('-Stop video-');
-    } else if (buttonName == '-Stop video-') {
-      setButtonName('Watch video');
+      setButtonName(t('projects.2.4'));
+    } else if (buttonName == t('projects.2.4')) {
+      setButtonName(t('projects.2.3'));
     }
   }, [isVideo]);
 
@@ -162,26 +162,13 @@ function SingleProject() {
       >
         <div className="single-project-description-inner">
           <div>
-            <h2>{t('singleProject.1')}</h2>
+            <h2>{t('singleProject.2')}</h2>
             <p
               className="color-lighter"
               dangerouslySetInnerHTML={{
-                __html: project.subtitle[i18n.language],
+                __html: project.description.technical[i18n.language],
               }}
             ></p>
-          </div>
-          <hr />
-          <div>
-            <h2>{t('singleProject.2')}</h2>
-            <p className="color-lighter">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe
-              porro, minima nobis modi ducimus voluptates nemo, quasi quis
-              necessitatibus labore, doloribus itaque nam dolorum alias tenetur
-              perferendis cumque totam deleniti laborum ipsa soluta! Numquam
-              quisquam voluptates eum! Aspernatur hic dolorum sapiente aut,
-              assumenda suscipit deleniti? Ratione exercitationem quasi
-              aspernatur voluptatem.
-            </p>
           </div>
           <hr />
           <div>
@@ -189,15 +176,27 @@ function SingleProject() {
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
               <div>
                 <p className="color-lighter">{t('singleProject.3.2.1')}</p>
-                <p>Polish</p>
+                {project.description.additional[i18n.language].languages.map(
+                  (language) => (
+                    <p>{language}</p>
+                  )
+                )}
               </div>
               <div>
                 <p className="color-lighter">{t('singleProject.3.2.2')}</p>
-                <p>iOS</p>
+                {project.description.additional[i18n.language].platforms.map(
+                  (platform) => (
+                    <p>{platform}</p>
+                  )
+                )}
               </div>
               <div>
                 <p className="color-lighter">{t('singleProject.3.2.3')}</p>
-                <p>Education</p>
+                {project.description.additional[i18n.language].categories.map(
+                  (category) => (
+                    <p>{category}</p>
+                  )
+                )}
               </div>
             </div>
           </div>
