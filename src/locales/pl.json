@@ -11,13 +11,13 @@
     },
     "3": {
       "1": "Moje projekty",
-      "2": "Kontakt"
+      "2": "Moje CV"
     },
     "changeLanguage": "speak English?"
   },
   "belowTop": {
     "1": "Coś o mnie",
-    "2": "Nazywam się Jakub. Jestem full-stackowym deweloperem. Moimi ulobionymi technologiami są React i Laravel. Lubię również design. Poza programowaniem, interesuję się również nauką języków obcych"
+    "2": "Nazywam się Jakub. Jestem full-stack deweloperem. Moimi ulobionymi technologiami są React i Laravel. Lubię również design. Poza programowaniem, interesuję się nauką języków obcych."
   },
   "technologies": {
     "1": {
@@ -29,7 +29,45 @@
     "1": "Moje wyróżnone projekty",
     "2": {
       "1": "Więcej info",
-      "2": "Kod źródłowy"
+      "2": "Kod źródłowy",
+      "3": "Obejrzyj wideo",
+      "4": "Zatrzymaj wideo"
+    }
+  },
+  "contact": {
+    "1": "Kontakt",
+    "2": "Dziękuję za odwiedzenie mojej strony!",
+    "3": "Moje dane kontakowe:"
+  },
+  "singleProject": {
+    "1": "Opis",
+    "2": "Techniczny opis",
+    "3": {
+      "1": "Dodatkowe informacje",
+      "2": {
+        "1": "Języki",
+        "2": "Dostęne na",
+        "3": "Kategoria"
+      }
+    }
+  },
+  "footer": {
+    "1": {
+      "1": "Atrybucje:",
+      "2": "Dziękuję za użyczenie zasobów."
+    },
+    "2": {
+      "1": "Linki",
+      "2": {
+        "1": "Dom",
+        "2": "O mnie",
+        "3": "Technolgie",
+        "4": "Projekty"
+      }
+    },
+    "3": {
+      "1": "Kontakt",
+      "2": "Moje CV"
     }
   }
 }

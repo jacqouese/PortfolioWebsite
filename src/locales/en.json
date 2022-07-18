@@ -11,7 +11,7 @@
     },
     "3": {
       "1": "My projects",
-      "2": "Contact"
+      "2": "Resume"
     },
     "changeLanguage": "speak Polish?"
   },
@@ -29,7 +29,45 @@
     "1": "My highlighted projects",
     "2": {
       "1": "Detailed info",
-      "2": "Source code"
+      "2": "Source code",
+      "3": "Watch video",
+      "4": "Stop video "
+    }
+  },
+  "contact": {
+    "1": "Kontakt",
+    "2": "Thanks for checking out my website!",
+    "3": "Here are my contact details:"
+  },
+  "singleProject": {
+    "1": "Description",
+    "2": "Technical details",
+    "3": {
+      "1": "Other information",
+      "2": {
+        "1": "Languages",
+        "2": "Avaliable for",
+        "3": "Category"
+      }
+    }
+  },
+  "footer": {
+    "1": {
+      "1": "Attributions:",
+      "2": "Thank you for letting me use your assets."
+    },
+    "2": {
+      "1": "Quick links",
+      "2": {
+        "1": "Dom",
+        "2": "O mnie",
+        "3": "Technolgie",
+        "4": "Projekty"
+      }
+    },
+    "3": {
+      "1": "Contact",
+      "2": "Resume"
     }
   }
 }
