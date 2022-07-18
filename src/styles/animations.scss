@@ -142,6 +142,61 @@
     transform-origin: bottom bottom;
 }
 
+.animate {
+    #envelope-letter {
+        animation: showLetter 1s ease-in-out;
+        animation-delay: 3.1s;
+        animation-fill-mode: both;
+    }
+    
+    #envelope-lid-closed {
+        animation: openEnvelopeOne 0.4s linear;
+        animation-delay: 2.2s;
+        transform-origin: 0 0;
+        animation-fill-mode: both;
+        transform-box: fill-box;
+    }
+    
+    #envelope-lid-open {
+        animation: openEnvelopeTwo 0.4s linear;
+        animation-delay: 2.3s;
+        transform-origin: 0 0;
+        animation-fill-mode: both;
+        transform-box: fill-box;
+    }
+}
+
+@keyframes showLetter {
+    0% {
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(-105px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes openEnvelopeOne {
+    0% {
+        transform: rotateX(0deg);
+
+    }
+    100% {
+        transform: rotateX(90deg);
+    }
+}
+
+@keyframes openEnvelopeTwo {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
 @keyframes movePlant {
     20% {
       transform: rotate(-10deg);
