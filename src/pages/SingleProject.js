@@ -126,12 +126,6 @@ function SingleProject() {
                             transition={{ duration: 2 }}
                             className="project-video"
                             controls
-                            style={{
-                                height: 'fit-content',
-                                maxHeight: 520,
-                                maxWidth: '800px',
-                                borderRadius: 5,
-                            }}
                         >
                             <source src={`/imgs/vid${project.id}.mp4`} type="video/mp4" />
                             Your browser does not support the video tag.
