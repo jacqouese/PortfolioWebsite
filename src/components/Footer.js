@@ -15,13 +15,7 @@ function Footer() {
                     <p>linguesia mockup: freepick.com by user17882893</p>
                     <p>{t('footer.1.2')}</p>
                 </div>
-                <div>
-                    <h3>{t('footer.2.1')}</h3>
-                    <a href="">{t('footer.2.2.1')}</a>
-                    <a href="">{t('footer.2.2.2')}</a>
-                    <a href="">{t('footer.2.2.3')}</a>
-                    <a href="">{t('footer.2.2.4')}</a>
-                </div>
+
                 <div>
                     <h3>{t('footer.3.1')}</h3>
                     <p>email: jakub003@pm.me</p>

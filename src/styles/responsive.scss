@@ -140,4 +140,9 @@
     .contact-text {
         width: 60%;
     }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 4rem;
+    }
 }
