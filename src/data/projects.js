@@ -39,46 +39,46 @@ const projects = [
         url: 'https://github.com/jacqouese/ProjectC',
         videoRadius: 10,
     },
-    {
-        id: 2,
-        tags: ['PL'],
-        name: 'Linguesia',
-        title: {
-            en: 'Language learning mobile app',
-            pl: 'Aplikacja mobilna do nauki języków',
-        },
-        subtitle: {
-            en: 'Learn German with the help of flashcards. Abbility to <br /> learn verbs, word genders, irregular verbs. <ul> <li>Cross platform with React Native</li> <li>Laravel API for storing flashcards</li> <li>SQLite for storing progress</li> </ul>',
-            pl: 'Ucz się niemieckiego za pomocą fiszek. Możliwość uczenia się czasowników, rodzajników wyrazów, czasowników nieregularnych. <ul> <li>Międzyplatformowa z React Native</li> <li>API Laravel do przechowywania fiszek</li> <li>SQLite do przechowywania postępu</li> </ul>',
-        },
-        description: {
-            technical: {
-                en: '<ul> <li>React Native with TypeScript</li><li>Animations with React Native Animated and react-native-animatable</li><li>SQLite and AsyncStorage for on-device storage faster loading and limiting API usage</li><li>Laravel API with an admin panel for storing flashcards and pushing new content to user devices</li></ul>',
-                pl: '<ul> <li>React Native z TypeScript</li><li>Animacje z bibliotekami React Native Animated i react-native-animatable</li><li>SQLite dla szybszego ładowania oraz ograniczenia zapytań do API</li><li>Laravel API z panelem admina do przechowywania fiszek i przesyłania danych do użytkownika</li></ul>',
-            },
-            additional: {
-                en: {
-                    languages: ['Polish'],
-                    platforms: ['iOS'],
-                    categories: ['education', 'language'],
-                },
-                pl: {
-                    languages: ['polski'],
-                    platforms: ['iOS'],
-                    categories: ['edukacja', 'język'],
-                },
-            },
-        },
-        technologies: ['React Native', 'Laravel API', 'SQL', 'SQLite'],
-        image: '/imgs/linguesia.png',
-        colors: {
-            primary: '#A4F0CF',
-            lighter: '#C1FFE4',
-            darker: '#0E422B',
-        },
-        url: 'https://github.com/jacqouese/Linguesia',
-        videoRadius: 34,
-    },
+    // {
+    //     id: 2,
+    //     tags: ['PL'],
+    //     name: 'Linguesia',
+    //     title: {
+    //         en: 'Language learning mobile app',
+    //         pl: 'Aplikacja mobilna do nauki języków',
+    //     },
+    //     subtitle: {
+    //         en: 'Learn German with the help of flashcards. Abbility to <br /> learn verbs, word genders, irregular verbs. <ul> <li>Cross platform with React Native</li> <li>Laravel API for storing flashcards</li> <li>SQLite for storing progress</li> </ul>',
+    //         pl: 'Ucz się niemieckiego za pomocą fiszek. Możliwość uczenia się czasowników, rodzajników wyrazów, czasowników nieregularnych. <ul> <li>Międzyplatformowa z React Native</li> <li>API Laravel do przechowywania fiszek</li> <li>SQLite do przechowywania postępu</li> </ul>',
+    //     },
+    //     description: {
+    //         technical: {
+    //             en: '<ul> <li>React Native with TypeScript</li><li>Animations with React Native Animated and react-native-animatable</li><li>SQLite and AsyncStorage for on-device storage faster loading and limiting API usage</li><li>Laravel API with an admin panel for storing flashcards and pushing new content to user devices</li></ul>',
+    //             pl: '<ul> <li>React Native z TypeScript</li><li>Animacje z bibliotekami React Native Animated i react-native-animatable</li><li>SQLite dla szybszego ładowania oraz ograniczenia zapytań do API</li><li>Laravel API z panelem admina do przechowywania fiszek i przesyłania danych do użytkownika</li></ul>',
+    //         },
+    //         additional: {
+    //             en: {
+    //                 languages: ['Polish'],
+    //                 platforms: ['iOS'],
+    //                 categories: ['education', 'language'],
+    //             },
+    //             pl: {
+    //                 languages: ['polski'],
+    //                 platforms: ['iOS'],
+    //                 categories: ['edukacja', 'język'],
+    //             },
+    //         },
+    //     },
+    //     technologies: ['React Native', 'Laravel API', 'SQL', 'SQLite'],
+    //     image: '/imgs/linguesia.png',
+    //     colors: {
+    //         primary: '#A4F0CF',
+    //         lighter: '#C1FFE4',
+    //         darker: '#0E422B',
+    //     },
+    //     url: 'https://github.com/jacqouese/Linguesia',
+    //     videoRadius: 34,
+    // },
     {
         id: 3,
         tags: ['PL'],

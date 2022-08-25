@@ -19,9 +19,11 @@ function Footer() {
                 <div>
                     <h3>{t('footer.3.1')}</h3>
                     <p>email: jakub003@pm.me</p>
-                    <a href="https://github.com/jacqouese">GitHub</a>
-                    <a href="">
-                        <a href="">{t('footer.3.2')}</a>
+                    <a href="https://github.com/jacqouese" target="_blank">
+                        GitHub
+                    </a>
+                    <a href="/resume.pdf" target="_blank">
+                        {t('footer.3.2')}
                     </a>
                 </div>
             </div>

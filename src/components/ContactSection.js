@@ -36,10 +36,11 @@ function ContactSection({ offsetY }) {
                         <h3>{t('contact.3')}</h3>
                         <div>
                             <p>jakub003@proton.me</p>
-                            <span>
-                                <img src={GithubIcon} alt="" style={{ maxWidth: 20, filter: 'invert(100%)' }} />
-                                <img src={GithubIcon} alt="" style={{ maxWidth: 20, filter: 'invert(100%)' }} />
-                            </span>
+                            <a href="https://github.com/jacqouese" target="_blank">
+                                <span>
+                                    <img src={GithubIcon} alt="" style={{ maxWidth: 20, filter: 'invert(100%)' }} />
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>

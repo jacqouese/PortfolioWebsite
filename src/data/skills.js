@@ -37,7 +37,7 @@ const skills = [
         children: [
             ['GIT', ''],
             ['npm', ''],
-            ['Bash', ''],
+            ['MacOS Terminal', ''],
             ['Postman', ''],
         ],
     },
