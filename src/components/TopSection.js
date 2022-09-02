@@ -1,11 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 import { ReactComponent as MainSvg } from '../assets/mainImg.svg';
 import { useTranslation } from 'react-i18next';
 
 function TopSection({ offsetY }) {
-    const { t, i18n } = useTranslation('translations');
+    const { t } = useTranslation('translations');
+
+    const handleScroll = () => {
+        document.getElementById('projects-section').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'center',
+        });
+    };
 
     return (
         <div className="top-section">
@@ -31,7 +39,7 @@ function TopSection({ offsetY }) {
                         animate={{ translateX: [-40, 0], opacity: [0, 1] }}
                         transition={{ delay: 0.6, duration: 0.6 }}
                     >
-                        <button>{t('top.3.1')}</button>
+                        <button onClick={handleScroll}>{t('top.3.1')}</button>
                         <a href="/resume.pdf" target="_blank">
                             <button className="secondary">{t('top.3.2')}</button>
                         </a>

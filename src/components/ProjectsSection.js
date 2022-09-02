@@ -41,7 +41,7 @@ function ProjectsSection({ offsetY }) {
     };
 
     return (
-        <div className="projects-section">
+        <div className="projects-section" id="projects-section">
             <motion.h1 className="h1-outline" style={{ transform: `translateX(-${offsetY * 0.2 - 200}px)` }}>
                 {t('projects.1')}
             </motion.h1>
@@ -92,6 +92,7 @@ function ProjectsSection({ offsetY }) {
                                 <a
                                     href={project.url}
                                     target="_blank"
+                                    rel="noreferrer"
                                     className="project-button"
                                     style={{ backgroundColor: project.colors.darker }}
                                 >

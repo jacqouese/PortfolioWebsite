@@ -150,19 +150,19 @@ function SingleProject() {
                             <div>
                                 <p className="color-lighter">{t('singleProject.3.2.1')}</p>
                                 {project.description.additional[i18n.language].languages.map((language) => (
-                                    <p>{language}</p>
+                                    <p key={language}>{language}</p>
                                 ))}
                             </div>
                             <div>
                                 <p className="color-lighter">{t('singleProject.3.2.2')}</p>
                                 {project.description.additional[i18n.language].platforms.map((platform) => (
-                                    <p>{platform}</p>
+                                    <p key={platform}>{platform}</p>
                                 ))}
                             </div>
                             <div>
                                 <p className="color-lighter">{t('singleProject.3.2.3')}</p>
                                 {project.description.additional[i18n.language].categories.map((category) => (
-                                    <p>{category}</p>
+                                    <p key={category}>{category}</p>
                                 ))}
                             </div>
                         </div>
