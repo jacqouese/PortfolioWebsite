@@ -29,14 +29,14 @@ const projects = [
                 },
             },
         },
-        technologies: ['React', 'Laravel', 'SQL', 'jsPDF'],
+        technologies: ['React', 'Laravel', 'SQL', 'jsPDF', 'Chart.js'],
         image: '/imgs/megazeen.png',
         colors: {
             primary: '#A2CEF9',
             lighter: '#ABD6FF',
             darker: '#0E2439',
         },
-        url: 'https://github.com/jacqouese/ProjectC',
+        url: 'https://github.com/jacqouese/Megazeen',
         videoRadius: 10,
     },
     // {
