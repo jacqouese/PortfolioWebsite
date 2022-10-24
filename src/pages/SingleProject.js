@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import projects from '../data/projects';
 import githubImg from '../assets/github.png';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -11,6 +11,7 @@ function SingleProject() {
     const { id } = useParams();
 
     const [buttonName, setButtonName] = useState(t('projects.2.1'));
+    const navigate = useNavigate();
 
     const projectIndex = projects.findIndex((elem) => elem.id == id);
 
@@ -18,7 +19,7 @@ function SingleProject() {
 
     const changeButtonName = () => {
         setTimeout(() => {
-            setButtonName('See live');
+            setButtonName(t('projects.2.5'));
         }, 2000);
     };
 
@@ -73,7 +74,9 @@ function SingleProject() {
                                         translateX: [0, -20, -50, 0, 0, 0, 0],
                                     }}
                                     transition={{ duration: 1.8, delay: 1.5, ease: 'anticipate' }}
-                                    onClick={() => {}}
+                                    onClick={() => {
+                                        navigate(-1);
+                                    }}
                                     onAnimationStart={changeButtonName}
                                 >
                                     {buttonName}
