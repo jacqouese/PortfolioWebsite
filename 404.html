@@ -11,10 +11,8 @@
 <body>
     <script>
         const url = window.location.href;
-        window.location.replace("https://jacqouese.github.io");
-        setTimeout(() => {
-            window.location.href = url;
-        }, 1)
+        const path = new URL(url).pathname;
+        window.location.replace("https://jacqouese.github.io?" + path);
     </script>
 </body>
 
